@@ -1,0 +1,105 @@
+@media (min-width: 360px) and (max-width: 767.99px) {
+  [aria-controls="menu-list"] {
+    order: 1;
+    margin: 0 0 0 1em;
+  }
+  [aria-expanded="false"] ~ .header-menu {
+    max-height: 0;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+  [aria-expanded="true"] ~ .header-menu {
+    max-height: 500px;
+    transform: rotateX(0);
+    transition: all 0.5s;
+  }
+  .header-menu {
+    background-color: #f6f8fa;
+    position: absolute;
+    right: 0;
+    top: 5.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .menu-option {
+    background-color: #f6f8fa;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapper {
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .sectioned-attributes {
+    flex-direction: column;
+    width: 50%;
+    padding: 2em 0 0 0;
+    gap: 2.5em;
+  }
+
+  .attribute-pair {
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+    width: fit-content;
+  }
+
+  .attribute {
+    text-align: left;
+    padding: 0;
+  }
+
+  .top {
+    width: fit-content;
+    gap: 0;
+  }
+
+  .bar {
+    width: 0;
+  }
+
+  .section-price {
+    margin-top: 2em;
+  }
+
+  .pricing-show-and-tell {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hire-us-quote {
+    text-align: center;
+  }
+
+  form .name,
+  form .selects {
+    flex-direction: column;
+  }
+
+  form .name input {
+    width: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div:nth-of-type(1) {
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -3,8 +3,262 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet-view.css" />
+    <link rel="stylesheet" href="./css/mobile-view.css" />
     <title>Saas company</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./assets/logos/logo-front.svg" alt="Front-logo" />
+      <nav>
+        <button aria-expanded="false" aria-controls="menu-list">
+          &#x2630;
+        </button>
+        <div class="header-menu">
+          <a class="menu-option" href="/#">Home</a>
+          <a class="menu-option" href="/#">Features</a>
+          <a class="menu-option" href="/#">Learn</a>
+          <a class="menu-option" href="/#">Pricing</a>
+          <a class="menu-option" href="/#">Hire us</a>
+          <button class="non-menu-button">Buy Now</button>
+        </div>
+      </nav>
+    </header>
+    <section class="section-top">
+      <div class="wrapper">
+        <h1>Empowering teams with the freedom</h1>
+        <div class="motto">Own the unlimited power of the web development</div>
+        <div class="video-and-link">
+          <button class="non-menu-button" style="font-size: 18px">
+            <i class="fa fa-play-circle"></i> Play Video
+          </button>
+          <a href="/#" class="on-page-link">Learn more</a>
+        </div>
+      </div>
+      <div class="logo-collection">
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+      </div>
+    </section>
+    <section class="section-why">
+      <h2>Why front?</h2>
+      <div class="powerful-message">
+        Front is an incredibly beautiful, fully responsive, and mobile-first
+        projects on the web - it is the starting point for creative sites
+      </div>
+      <div class="sectioned-attributes">
+        <div class="attribute-pair">
+          <div class="top">
+            <div class="bar invisible"></div>
+            <div class="dot"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="attribute">Basic elements</div>
+        </div>
+        <div class="attribute-pair">
+          <div class="top">
+            <div class="bar"></div>
+            <div class="dot"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="attribute">Components</div>
+        </div>
+        <div class="attribute-pair">
+          <div class="top">
+            <div class="bar"></div>
+            <div class="dot"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="attribute">Combined components</div>
+        </div>
+        <div class="attribute-pair">
+          <div class="top">
+            <div class="bar"></div>
+            <div class="dot"></div>
+            <div class="bar invisible"></div>
+          </div>
+          <div class="attribute">Page layouts</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-price">
+      <h2>Pricing</h2>
+      <div class="pricing-message">
+        No additional costs. Pay for what you use
+      </div>
+      <div class="pricing-show-and-tell">
+        <div class="shown-price">
+          <h2><span class="big-number">59</span><span> / mo</span></h2>
+          <hr />
+          <div>
+            Start your Front business now. 100% guaranteed money back. No
+            questions asked.
+          </div>
+          <button class="non-menu-button" style="font-size: 18px">
+            <i class="fa fa-play-circle"></i> Play Video
+          </button>
+          <div>No credit card required</div>
+        </div>
+        <div class="component-card component">
+          <img src="./assets/images/components.svg" alt="component" />
+          <h3>Hundreds of components</h3>
+          <div>
+            Achieve maximum productivity with minimum effort with Front and
+            create robust Limitless products.
+          </div>
+        </div>
+        <div class="component-card images">
+          <img src="./assets/images/images.svg" alt="images" />
+          <h3>Images included</h3>
+          <div>
+            Images included. We made custom license for all our premium images
+            in the front.
+          </div>
+        </div>
+        <div class="component-card cancel">
+          <img src="./assets/images/cancel.svg" alt="cancel" />
+          <h3>Cancel any time <span class="status">sketch</span></h3>
+          <div>If its not for you, just cancel, no hidden costs or fees.</div>
+        </div>
+        <div class="component-card money">
+          <img src="./assets/images/moneyback.svg" alt="moneyback" />
+          <h3>Money back</h3>
+          <div>100% guaranteed money back. No questions asked.</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <div class="hire-us-quote">
+        <div class="quote">
+          <h2>Hire us</h2>
+          <div>Whatever your goal - we will get you there</div>
+          <hr />
+          <div>
+            <em
+              >"I love front! I love the ease of use, I love the fact that I
+              have total creative freedom..."</em
+            >
+          </div>
+        </div>
+        <div class="person-quoted">
+          <h3>Charlotte Moore</h3>
+          <div>Head of Commercials, Slack</div>
+          <img src="./assets/images/man_one.jpg" alt="Moore" />
+        </div>
+      </div>
+      <div class="form-area">
+        <h2>Fill out the form and we'll be in touch as soon as possible</h2>
+        <form>
+          <div class="name">
+            <input
+              type="text"
+              placeholder="First name"
+              id="first-name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              id="last-name"
+              required
+            />
+          </div>
+          <div class="email">
+            <input type="email" placeholder="Email" id="email" required />
+          </div>
+          <div class="selects">
+            <select id="budget">
+              <option value="" disabled selected>Budget</option>
+            </select>
+            <select id="country">
+              <option value="" disabled selected>Country</option>
+            </select>
+          </div>
+          <div class="textarea">
+            <textarea
+              name="more-info-area"
+              rows="6"
+              id="more-info"
+              placeholder="Tell us more about your project, needs, and timeline, please..."
+            ></textarea>
+          </div>
+          <div class="email-acceptance">
+            <input type="checkbox" id="email-acceptance" />
+            <label for="email-acceptance"
+              >Yes, I'd like to receive occasional marketing emails from Front.
+              I have the right to opt out at any time.</label
+            >
+          </div>
+          <a href="/#" class="on-page-link">View privacy policy</a>
+          <button class="non-menu-button">Get Started</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <img src="./assets/logos/logo-front.svg" alt="" />
+        <div>
+          <span
+            ><i class="fa fa-location-arrow"></i> 153 Williamson Plaza,
+            Magieberg</span
+          >
+        </div>
+        <div>
+          <span
+            ><i class="fa fa-phone"></i> <span>+1 (062) 109-9222</span></span
+          >
+        </div>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <a href="/#">About</a>
+        <a href="/#">Career <span>We're hiring</span></a>
+        <a href="/#">Blog</a>
+        <a href="/#">Customers</a>
+        <a href="/#">Hire us</a>
+      </div>
+      <div>
+        <h3>Features</h3>
+        <a href="/#">Press</a>
+        <a href="/#">Release notes</a>
+        <a href="/#">Integrations</a>
+        <a href="/#">Pricing</a>
+      </div>
+      <div>
+        <h3>Documentation</h3>
+        <a href="/#">Support</a>
+        <a href="/#">Docs</a>
+        <a href="/#">Status</a>
+        <a href="/#">API Reference</a>
+        <a href="/#">Tech Requirements</a>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <a href="/#"><i class="fa fa-info"></i> Help</a>
+        <a href="/#"><i class="fa fa-user"></i> Your Account</a>
+      </div>
+    </footer>
+
+    <script>
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
+  </body>
 </html>

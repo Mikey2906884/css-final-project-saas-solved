@@ -1,0 +1,486 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #f6f8fa;
+  padding: 1.5em 0 1.5em 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  padding: 0 2em 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 2em 0 0;
+  color: #939fab;
+  transition: color 0.5s;
+}
+
+header img {
+  width: 10em;
+  margin-right: auto;
+}
+
+.non-menu-button {
+  padding: 1em 2em;
+  background-color: #2476ff;
+  color: white;
+  border: 2px solid #2476ff;
+  border-radius: 2rem;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+[aria-controls="menu-list"] {
+  background-color: transparent;
+  border: none;
+  font-size: xx-large;
+}
+
+.section-top {
+  background-image: url("../assets/bg/background-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: xx-large;
+  height: 560px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5em 1em;
+}
+
+h1 {
+  margin: 0;
+  width: 8em;
+}
+
+.motto {
+  margin: 1em 0 2em 0;
+  color: #677788;
+  font-size: large;
+}
+
+.on-page-link {
+  font-size: large;
+  text-decoration: none;
+  color: #2476ff;
+  padding: 0 1em;
+}
+
+.logo {
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgb(175, 175, 175);
+  position: absolute;
+}
+
+.logo:nth-child(1),
+.logo:nth-child(5) {
+  width: 2em;
+  height: 2em;
+}
+
+.logo:nth-child(1) {
+  background-image: url("../assets/logos/google.png");
+  background-size: 80%;
+  left: 52%;
+  top: 180px;
+}
+.logo:nth-child(2) {
+  background-image: url("../assets/logos/atlassian.png");
+  background-size: 65%;
+  left: 62%;
+  top: 180px;
+}
+.logo:nth-child(3) {
+  background-image: url("../assets/logos/asana.png");
+  background-size: 70%;
+  left: 87%;
+  top: 180px;
+}
+.logo:nth-child(4) {
+  background-image: url("../assets/logos/calendar.png");
+  background-size: 65%;
+  left: 83%;
+  top: 560px;
+}
+.logo:nth-child(5) {
+  background-image: url("../assets/logos/google-ads.png");
+  background-size: 80%;
+  left: 58%;
+  top: 550px;
+}
+.logo:nth-child(6) {
+  background-image: url("../assets/logos/paypal.jpg");
+  background-size: 65%;
+  left: 50%;
+  top: 350px;
+}
+.logo:nth-child(7) {
+  background-image: url("../assets/logos/weave.png");
+  background-size: 75%;
+  left: 72%;
+  top: 360px;
+}
+
+.section-why,
+.section-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+}
+
+.powerful-message,
+.pricing-message {
+  color: #677788;
+  text-align: center;
+  width: 75%;
+}
+
+.sectioned-attributes {
+  display: flex;
+  justify-content: space-around;
+  padding: 5em 0;
+  width: 100%;
+}
+
+.attribute-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  gap: 1.5em;
+}
+
+.bar {
+  width: 42%;
+  height: 2px;
+  background-color: #e8ebf3;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.dot {
+  width: 0.45em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: #0066ff;
+  box-shadow: 0 0 2em 2em #ecf2ff;
+  clip-path: circle(1.3em);
+}
+
+.attribute {
+  text-align: center;
+  width: fit-content;
+  padding: 2em 0 0 0;
+}
+
+.pricing-show-and-tell {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+  padding: 3em;
+  font-size: large;
+  grid-template-areas:
+    "show component images"
+    "show cancel money";
+}
+
+.shown-price {
+  grid-area: show;
+  padding: 2em;
+  color: #677788;
+  transition: all 0.5s;
+}
+
+.shown-price div:nth-of-type(1) {
+  padding: 2em 0 3em;
+}
+
+.shown-price div:nth-of-type(2) {
+  padding: 1em 0 2em;
+}
+
+.big-number {
+  color: black;
+  font-size: 75px;
+}
+
+.component {
+  grid-area: component;
+}
+
+.cancel {
+  grid-area: cancel;
+}
+
+.cancel h3 span {
+  font-size: small;
+  background-color: #01c8a7;
+  color: white;
+  padding: 0.3em 1em;
+  border-radius: 1.5rem;
+}
+
+.images {
+  grid-area: images;
+}
+
+.money {
+  grid-area: money;
+}
+
+.component-card img {
+  width: 3em;
+}
+
+.component-card div {
+  color: #677788;
+}
+
+.section-form {
+  display: flex;
+  align-items: center;
+  background-color: #20335b;
+  font-size: x-large;
+  color: white;
+  padding: 1.5em 2em;
+  gap: 2em;
+}
+
+.hire-us-quote {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.hire-us-quote .quote div:nth-of-type(1),
+.hire-us-quote .person-quoted div:nth-of-type(1) {
+  color: #677788;
+}
+
+.person-quoted {
+  font-size: large;
+  padding: 3em 0 0;
+}
+
+.person-quoted h3 {
+  margin: 0;
+}
+
+.hire-us-quote hr {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.hire-us-quote img {
+  width: 4em;
+  border-radius: 50%;
+  margin-top: 1em;
+}
+
+.form-area {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2em;
+  font-size: large;
+  color: black;
+}
+
+.form-area h2 {
+  margin: 0 0 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+form .name,
+form .selects,
+form .email-acceptance,
+form .email,
+form .textarea {
+  display: flex;
+  width: 100%;
+  gap: 1.5em;
+}
+
+form .email-acceptance {
+  align-items: flex-start;
+}
+
+form .name input,
+form .selects select,
+form .email input,
+form .textarea textarea {
+  width: 100%;
+}
+
+form input,
+form select,
+textarea {
+  font-size: larger;
+  padding: 0.5em;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  resize: none;
+  font-family: sans-serif;
+}
+
+form .email-acceptance label {
+  color: #677788;
+  line-height: 1.5em;
+}
+
+form a.on-page-link {
+  text-decoration: dotted;
+  text-decoration-line: underline;
+  transition: all 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  font-size: x-large;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div h3 {
+  margin-top: 0;
+}
+
+footer div a {
+  font-size: large;
+  padding-bottom: 1em;
+  text-decoration: none;
+  color: #677788;
+  transition: all 0.5s;
+}
+
+footer div a:last-of-type {
+  padding: 0;
+}
+
+footer div:nth-of-type(1) {
+  width: 25%;
+  font-size: large;
+}
+
+footer img {
+  padding-bottom: 1em;
+}
+
+footer div:nth-of-type(1) div {
+  width: 100%;
+  color: #677788;
+  padding-top: 1em;
+}
+
+footer div:nth-of-type(1) div:nth-of-type(2) span span {
+  color: #2476ff;
+}
+
+footer div:nth-of-type(2) a:nth-of-type(2) span {
+  background-color: #3f87ff;
+  color: white;
+  font-size: x-small;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer img {
+  width: 7em;
+}
+
+@media (min-width: 1024px) {
+  nav a:hover,
+  footer a:hover {
+    color: #3f87ff;
+  }
+
+  .non-menu-button:hover {
+    color: #2476ff;
+    background-color: white;
+  }
+
+  [aria-controls="menu-list"] {
+    display: none;
+  }
+
+  .logo:nth-child(2),
+  .logo:nth-child(4),
+  .logo:nth-child(6),
+  .logo:nth-child(7) {
+    animation-name: fly-in-bottom;
+    animation-duration: 2s;
+  }
+
+  .logo:nth-child(1),
+  .logo:nth-child(3),
+  .logo:nth-child(5) {
+    animation-name: fly-in-right;
+    animation-duration: 2s;
+  }
+
+  @keyframes fly-in-bottom {
+    0% {
+      opacity: 0;
+      top: 100%;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fly-in-right {
+    0% {
+      opacity: 0;
+      left: 100%;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .shown-price:hover {
+    box-shadow: 0 5px 10px gray;
+  }
+
+  form a.on-page-link:hover {
+    color: #677788;
+  }
+}
